@@ -24,8 +24,6 @@ const Home = () => {
 	}, [js]);
 	return (
 		<div>
-			<Head title="Home" />
-
 			<div className="hero">
 				<h1 className="title">Welcome to Next!</h1>
 				<p className="description">
