@@ -13,10 +13,9 @@ export default (req, res) => {
 };
 
 const getTweets = async term => {
-	const tweets, response
 	try {
-		 response = await T.get('search/tweets', { q: term, count: 5 });
-		 tweets = await response.json();
+		const response = await T.get('search/tweets', { q: term, count: 5 });
+		const tweets = await response.json();
 	} catch (err) {
 		console.log(err);
 	}
