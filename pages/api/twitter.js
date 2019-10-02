@@ -8,8 +8,8 @@ const T = new Twit({
 });
 
 export default async (req, res) => {
-	const res = await getTweets('javascript');
-	res.send(res);
+	const response = await getTweets('javascript');
+	res.send(response);
 };
 
 const getTweets = async term => {
