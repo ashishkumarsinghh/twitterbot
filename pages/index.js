@@ -4,7 +4,7 @@ import Head from '../components/head';
 import Nav from '../components/nav';
 
 const Home = () => {
-	const [date, setDate, js, setJs] = useState(null);
+	const [date, setDate] = useState(null);
 
 	useEffect(() => {
 		async function getDate() {
@@ -12,15 +12,19 @@ const Home = () => {
 			const newDate = await res.json();
 			setDate(newDate);
 		}
+
+		getDate();
+	}, [date]);
+	const [js, setJs] = useState(null);
+
+	useEffect(() => {
 		const getJs = async () => {
 			const res = await fetch('/api/javascript');
 			const newJs = await res.json();
 			setJs(newJs);
 		};
-		getDate();
 		getJs();
-	}, []);
-
+	}, [js]);
 	return (
 		<div>
 			<Head title="Home" />
