@@ -1,4 +1,4 @@
 export default (req, res) => {
-	const first = 'Hello from javascript page.';
-	res.json({ first });
+	const js = 'Hello from javascript page.';
+	res.json({ js });
 };
