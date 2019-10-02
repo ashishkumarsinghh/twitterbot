@@ -12,7 +12,7 @@ const Home = () => {
 			const newDate = await res.json();
 			setDate(newDate);
 		}
-		getJs = async () => {
+		const getJs = async () => {
 			const res = await fetch('/api/javascript');
 			const newJs = await res.json();
 			setJs(newJs);
