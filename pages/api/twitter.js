@@ -7,8 +7,8 @@ const T = new Twit({
 	access_token_secret: process.env.TATS,
 });
 
-export default (req, res) => {
-	const response = getTweets('javascript');
+export default async (req, res) => {
+	const response = await getTweets('javascript');
 	res.send(response);
 };
 
