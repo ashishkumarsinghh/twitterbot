@@ -1,10 +1,8 @@
 {
-	"build": {
-		"env": {
-			"TAK": "@twitter-api-key",
-			"TAKS": "@twitter-api-secret-key",
-			"TATK": "@twitter-access-token",
-			"TATS": "@twitter-access-token-secret"
-		}
+	"env": {
+		"TAK": "@twitter-api-key",
+		"TAKS": "@twitter-api-secret-key",
+		"TATK": "@twitter-access-token",
+		"TATS": "@twitter-access-token-secret"
 	}
 }
